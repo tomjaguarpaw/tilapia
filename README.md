@@ -24,10 +24,10 @@ to the community will be that existing maintainers feel that their job
 becomes *easier*: our aim is that they feel pleased that their project is
 being discussed or addressed by Tilapia, not threatened.
 
-What is Tilapia not?  We are not going to add new functionality to any
-tools or libraries.  Authors and maintainers already do a great job of
-that.  We are not going to teach Haskell.  There are good resources
-for that already.
+What Tilapia does not intend to do.  We are not going to add new
+functionality to any tools or libraries.  Authors and maintainers already
+do a great job of that.  We are not going to teach Haskell.  There are good
+resources for that already.
 
 ## Examples
 
