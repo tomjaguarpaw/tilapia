@@ -21,7 +21,7 @@ Tilapia will help existing maintainers with tasks they may not have
 time for, and bring to their attention helpful suggestions they may
 not otherwise have considered.  One sign that Tilapia is adding value
 to the community will be that existing maintainers feel that their job
-becomes *easier*: we aim they will feel pleased that their project is
+becomes *easier*: our aim is that they feel pleased that their project is
 being discussed or addressed by Tilapia, not threatened.
 
 What is Tilapia not?  We are not going to add new functionality to any
