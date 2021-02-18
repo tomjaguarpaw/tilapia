@@ -49,8 +49,8 @@ Note: If you don't hit "OK" on the last step it won't be saved, so our next test
 # GHC AND CABAL INSTALL TEST
 
 To test that we were successful, open a new PowerShell or cmd (a new instance is important because the environment variables need to be updated) and type:
-- `ghc --version`
-- `cabal --version`
+* `ghc --version`
+* `cabal --version`
 
 You should see version information like:
 
@@ -61,6 +61,8 @@ and
 `cabal-install version 3.2.0.0`
 `compiled using version 3.2.0.0 of the Cabal library`
 
+Run:
+`cabal update`
 
 # MSYS2
 
