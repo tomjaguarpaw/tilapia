@@ -70,39 +70,41 @@ Next, we need to install MSYS2 from https://www.msys2.org/ (follow the instructi
 
 Type "MSYS" into Windows search and select "MSYS2 MinGW 64-bit" (make sure it's the 64-bit one!)
 
+!!!!IMPORTANT!!!! Ensure that you've selected "MSYS2 MinGW 64-bit", if you use 32-bit or default your installation won't work !!!!IMPORTANT!!!!
+
 In the resulting console window:
-- run the following command: `pacman -S mingw-w64-x86_64-toolchain`
-- press enter then say yes
+* run the following command: `pacman -S mingw-w64-x86_64-toolchain`
+* press enter then say yes
 
 Now run:
-- `which pkg-config`
+* `which pkg-config`
 
 If that failed, double check that you opened "MSYS2 MinGW 64-bit" and not one of the other versions.
 
 We should get the output: `/mingw64/bin/pkg-config`
 
 Add the following directories to your system path:
-- `C:\msys64\mingw64\bin`
-- `C:\msys64\mingw32\bin`
-- `C:\msys64\usr\bin`
+* `C:\msys64\mingw64\bin`
+* `C:\msys64\mingw32\bin`
+* `C:\msys64\usr\bin`
 
 To add an item to your system path: 
-- Type "environment" into your Windows search bar and select "Edit the system environment variables"
-- Click the "Environment Variables" button
-- Under "System variables", scroll down until you find "Path". Select it and click "Edit"
-- Click "New"
-- Enter the desired directory (i.e. C:\msys64\mingw64\bin) and hit OK
-- Enter the next desired directory (i.e. C:\msys64\mingw32\bin) and hit OK
-- Enter the next desired directory (i.e. C:\msys64\usr\bin) and hit OK
-- Hit "OK" on the "Environment Variables window"
+* Type "environment" into your Windows search bar and select "Edit the system environment variables"
+* Click the "Environment Variables" button
+* Under "System variables", scroll down until you find "Path". Select it and click "Edit"
+* Click "New"
+* Enter the desired directory (i.e. C:\msys64\mingw64\bin) and hit OK
+* Enter the next desired directory (i.e. C:\msys64\mingw32\bin) and hit OK
+* Enter the next desired directory (i.e. C:\msys64\usr\bin) and hit OK
+* Hit "OK" on the "Environment Variables window"
 Note: If you don't hit "OK" on the last step it won't be saved, so our next test won't work
 
 You can now access packages via PowerShell.
 
 Next, to test that we're all set up, we'll test our ability to install packages. Close and open PowerShell, then run the following commands:
 
-- `pacman -S mingw-w64-x86_64-cairo`
-- `cabal new-install cairo --lib`
+* `pacman -S mingw-w64-x86_64-cairo`
+* `cabal new-install cairo --lib`
 
 If this succeeds, we're still on track.
 
@@ -110,11 +112,11 @@ If this succeeds, we're still on track.
 # VS CODE AND LANGUAGE SERVER:
 
 Finally, to set up your development environment:
-- Download and install Visual Studio Code from https://code.visualstudio.com/download 
-- Open Visual Studio Code 
-- Navigate to the "Extensions" tab
-- Type "Haskell" in the search bar
-- Select the "Haskell" extension. It should be the top option. This will automatically install the language server and provide intellisense.
+* Download and install Visual Studio Code from https://code.visualstudio.com/download 
+* Open Visual Studio Code 
+* Navigate to the "Extensions" tab
+* Type "Haskell" in the search bar
+* Select the "Haskell" extension. It should be the top option. This will automatically install the language server and provide intellisense.
 
 Create a new project by executing the following command in a new folder called Test:
 cabal init
