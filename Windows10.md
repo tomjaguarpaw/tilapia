@@ -89,6 +89,8 @@ You can now access packages via PowerShell.
 If you already had PowerShell open, close it an open a new window, then:
 * run the following command: `pacman -S mingw-w64-x86_64-toolchain`
 * press enter then say yes
+* run `pacman -S mingw-w64-x86_64-pkg-config`
+* say yes if it asks for confirmation
 
 Now run:
 * `which pkg-config`
