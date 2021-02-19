@@ -68,21 +68,6 @@ Run:
 
 Next, we need to install MSYS2 from https://www.msys2.org/ (follow the instructions on that page).
 
-Type "MSYS" into Windows search and select "MSYS2 MinGW 64-bit" (make sure it's the 64-bit one!)
-
-!!!!IMPORTANT!!!! Ensure that you've selected "MSYS2 MinGW 64-bit", if you use 32-bit or default your installation won't work !!!!IMPORTANT!!!!
-
-In the resulting console window:
-* run the following command: `pacman -S mingw-w64-x86_64-toolchain`
-* press enter then say yes
-
-Now run:
-* `which pkg-config`
-
-If that failed, double check that you opened "MSYS2 MinGW 64-bit" and not one of the other versions.
-
-We should get the output: `/mingw64/bin/pkg-config`
-
 Add the following directories to your system path:
 * `C:\msys64\mingw64\bin`
 * `C:\msys64\mingw32\bin`
@@ -101,7 +86,16 @@ Note: If you don't hit "OK" on the last step it won't be saved, so our next test
 
 You can now access packages via PowerShell.
 
-Next, to test that we're all set up, we'll test our ability to install packages. Close and open PowerShell, then run the following commands:
+If you already had PowerShell open, close it an open a new window, then:
+* run the following command: `pacman -S mingw-w64-x86_64-toolchain`
+* press enter then say yes
+
+Now run:
+* `which pkg-config`
+
+We should get the output: `/mingw64/bin/pkg-config`
+
+Next, to check that we're all set up, we'll test our ability to install packages. Run the following commands:
 
 * `pacman -S mingw-w64-x86_64-cairo`
 * `cabal new-install cairo --lib`
