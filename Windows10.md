@@ -40,7 +40,7 @@ To add an item to your system path:
 * Click the "Environment Variables" button
 * Under "System variables", scroll down until you find "Path". Select it and click "Edit"
 * Click "New"
-* Enter the desired directory (e.g. `C:\Users\Will\Haskell\Cabal`) and hit OK
+* Enter the desired directory (e.g. `C:\Users\Will\Haskell\Cabal`) and hit New
 * Enter the next desired directory (e.g `C:\Users\Will\Haskell\GHC\bin`) and hit OK
 * Hit "OK" on the "Environment Variables window"
 Note: If you don't hit "OK" on the last step it won't be saved, so our next test won't work
@@ -83,8 +83,8 @@ To add an item to your system path:
 * Click the "Environment Variables" button
 * Under "System variables", scroll down until you find "Path". Select it and click "Edit"
 * Click "New"
-* Enter the desired directory (i.e. `C:\msys64\mingw64\bin`) and hit OK
-* Enter the next desired directory (i.e. `C:\msys64\mingw32\bin`) and hit OK
+* Enter the desired directory (i.e. `C:\msys64\mingw64\bin`) and hit New
+* Enter the next desired directory (i.e. `C:\msys64\mingw32\bin`) and hit New
 * Enter the next desired directory (i.e. `C:\msys64\usr\bin`) and hit OK
 * Hit "OK" on the "Environment Variables window"
 Note: If you don't hit "OK" on the last step it won't be saved, so our next test won't work
