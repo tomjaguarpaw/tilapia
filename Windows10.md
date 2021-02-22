@@ -2,7 +2,7 @@ All credit for the information here goes to [lambdaheart](https://github.com/lam
 
 -----------------------------------------------------
 
-# INSTALLER - For if you want to use chocolatey (note: don't use this method of installation until this issue is closed https://github.com/haskell/haskell-language-server/issues/1372):
+# INSTALLER - For if you want to use chocolatey:
 
 Follow [the Haskell Platform Windows installation instructions](https://www.haskell.org/platform/windows.html).
 
