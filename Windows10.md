@@ -65,6 +65,8 @@ cabal-install version 3.2.0.0
 compiled using version 3.2.0.0 of the Cabal library
 ```
 
+# UPDATING CABAL
+
 Run `cabal update`
 
 # MSYS2
