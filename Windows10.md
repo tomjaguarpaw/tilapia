@@ -9,6 +9,8 @@ Follow [the Haskell Platform Windows installation instructions](https://www.hask
 
 # MANUAL - For if you don't want to use chocolatey. Skip this if you followed the step above
 
+Firstly, if you don't already have 7-Zip installed, [you'll need to install it](https://www.7-zip.org/download.html) in order to uncompress the `.tar.xz` file containing `GHC` later. Now when you right-click an archive, you should see a `7-Zip` option. For more information, please see [this usage guide](https://7ziphelp.com/how-to-use-7-zip).
+
 Make a new folder called `Haskell` in your `C:\Users\{YourName}` folder.
 
 Create two new folders inside your `Haskell` folder called:
@@ -17,7 +19,7 @@ Create two new folders inside your `Haskell` folder called:
 
 You should now have the folders `.\Haskell\GHC` and `.\Haskell\Cabal`.
 
-Download and extract to your `.\Haskell\GHC` folder: https://www.haskell.org/ghc/download_ghc_8_10_3.html (scroll down until you find the Windows binary package)
+Download and extract (using 7-Zip) to your `.\Haskell\GHC` folder: https://www.haskell.org/ghc/download_ghc_8_10_3.html (scroll down until you find the Windows binary package)
 Make sure to extract from the folder under the version. So extract the contents of the `ghc-8.10.3` folder, not the `ghc-8.10.3` folder itself.
 
 In your `GHC` folder, you should now have the following folders:
