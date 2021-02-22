@@ -20,7 +20,7 @@ You should now have the folders `.\Haskell\GHC` and `.\Haskell\Cabal`.
 Download and extract to your `.\Haskell\GHC` folder: https://www.haskell.org/ghc/download_ghc_8_10_3.html (scroll down until you find the Windows binary package)
 Make sure to extract from the folder under the version. So extract the contents of the `ghc-8.10.3` folder, not the `ghc-8.10.3` folder itself.
 
-In your GHC folder, you should now have the following folders:
+In your `GHC` folder, you should now have the following folders:
 * `bin`
 * `doc`
 * `lib`
