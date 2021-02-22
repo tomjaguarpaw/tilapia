@@ -53,23 +53,15 @@ Note: If you don't hit "OK" on the last step it won't be saved, so our next test
 To test that we were successful, open a new PowerShell or cmd (a new instance is important because the environment variables need to be updated) and type:
 * `ghc --version`
 * `cabal --version`
+* `cabal update`
 
 You should see version information like:
+* `The Glorious Glasgow Haskell Compilation System, version 8.10.3`
+* `cabal-install version 3.2.0.0`
+* `compiled using version 3.2.0.0 of the Cabal library`
+* `Downloading the latest package list from hackage.haskell.org`
+* `To revert to previous state run: cabal v2-update 'hackage.haskell.org,2021-02-12T05:55:33Z'`
 
-```
-The Glorious Glasgow Haskell Compilation System, version 8.10.3
-```
-
-and
-
-```
-cabal-install version 3.2.0.0
-compiled using version 3.2.0.0 of the Cabal library
-```
-
-# UPDATING CABAL
-
-Run `cabal update`
 
 # MSYS2
 
