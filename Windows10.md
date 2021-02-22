@@ -9,7 +9,7 @@ Follow [the Haskell Platform Windows installation instructions](https://www.hask
 
 # MANUAL - For if you don't want to use chocolatey. Skip this if you followed the step above
 
-Firstly, if you don't already have 7-Zip installed, [you'll need to install it](https://www.7-zip.org/download.html) in order to uncompress the `.tar.xz` file containing `GHC` later. Now when you right-click an archive, you should see a `7-Zip` option. For more information, please see [this usage guide](https://7ziphelp.com/how-to-use-7-zip).
+Firstly, if you don't already have 7-Zip installed, [you'll need to install it](https://www.7-zip.org/download.html) in order to uncompress the `.tar.xz` file containing `GHC` which we'll be downloading in a minute. For usage information, please see [this guide](https://7ziphelp.com/how-to-use-7-zip).
 
 Make a new folder called `Haskell` in your `C:\Users\{YourName}` folder.
 
