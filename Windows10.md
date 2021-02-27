@@ -136,3 +136,5 @@ All credit for the information here goes to
 [lambdaheart](https://github.com/lambdaheart) for [the excellent
 guide](https://github.com/lambdaheart/Haskell-Guide/blob/master/DevelopmentEnvironment.md),
 of which this is just a condensed and more bare-bones version.
+
+Written by Will Gould.
