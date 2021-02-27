@@ -1,13 +1,22 @@
-All credit for the information here goes to [lambdaheart](https://github.com/lambdaheart) for [the excellent guide](https://github.com/lambdaheart/Haskell-Guide/blob/master/DevelopmentEnvironment.md), of which this is just a condensed and more bare-bones version.
+# Install GHC, Cabal and Haskell Language Server IDE on Windows 10
 
------------------------------------------------------
+There are two ways to install GHC and Cabal on Windows 10
 
-# INSTALLER - For if you want to use chocolatey:
+1. Automatically, by using the Chocolately package manager
+2. Manually, by downloading, unpacking and configuring all the dependencies
 
-Follow [the Haskell Platform Windows installation instructions](https://www.haskell.org/platform/windows.html).
+Option 1 will generally be easier and quicker but you might choose 2 if you want more control over or insight into the process.
 
+## Install GHC and Cabal using the Chocolately package manager
 
-# MANUAL - For if you don't want to use chocolatey. Skip this if you followed the step above
+Follow [the Haskell Platform Windows installation
+instructions](https://www.haskell.org/platform/windows.html). Then
+skip directly to the section "VS Code and Haskell Language Server"
+below.
+
+## Install GHC and Cabal manually
+
+If you chose not to use the Chocolately package manager then this section will explain how you can install GHC and Cabal manually.
 
 Firstly, if you don't already have 7-Zip installed, [you'll need to install it](https://www.7-zip.org/download.html) in order to uncompress the `.tar.xz` file containing `GHC` which we'll be downloading in a minute. For usage information, please see [this guide](https://7ziphelp.com/how-to-use-7-zip).
 
@@ -47,8 +56,7 @@ To add an item to your system path:
 * Hit "OK" on the "Environment Variables window"
 Note: If you don't hit "OK" on the last step it won't be saved, so our next test won't work
 
-
-# GHC AND CABAL INSTALL TEST
+### Test the installation of GHC and Cabal
 
 To test that we were successful, open a new PowerShell or cmd (a new instance is important because the environment variables need to be updated) and type:
 * `ghc --version`
@@ -63,7 +71,7 @@ You should see version information like:
 * `To revert to previous state run: cabal v2-update 'hackage.haskell.org,2021-02-12T05:55:33Z'`
 
 
-# MSYS2
+## Install MSYS2
 
 Next, we need to install MSYS2 from https://www.msys2.org/ (follow the instructions on that page).
 
@@ -105,7 +113,7 @@ Next, to check that we're all set up, we'll test our ability to install packages
 If this succeeds, we're still on track.
 
 
-# VS CODE AND LANGUAGE SERVER:
+## Install VS Code and the Haskell Language Server
 
 Finally, to set up your development environment:
 * Download and install Visual Studio Code from https://code.visualstudio.com/download 
@@ -121,3 +129,10 @@ Create a new project by executing the following command in a new folder called T
 Open the Test folder in VS Code and check that your language server extension is working correctly by mousing over a type in `Main.hs`.
 
 If some reasonable looking information is displayed, congratulations! You're all set.
+
+# Credits
+
+All credit for the information here goes to
+[lambdaheart](https://github.com/lambdaheart) for [the excellent
+guide](https://github.com/lambdaheart/Haskell-Guide/blob/master/DevelopmentEnvironment.md),
+of which this is just a condensed and more bare-bones version.
