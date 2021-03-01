@@ -117,10 +117,8 @@ If this succeeds, we're still on track.
 
 Finally, to set up your development environment:
 * Download and install Visual Studio Code from https://code.visualstudio.com/download 
-* Open Visual Studio Code
-* Navigate to the "Extensions" tab
-* Type "Haskell" in the search bar
-* Select the "Haskell" extension. It should be the top option. This will automatically install the language server and provide intellisense.
+* Install the Haskell extension: https://marketplace.visualstudio.com/items?itemName=haskell.haskell
+  * Alternatively, open the Extensions tab in VS Code and search for "haskell.haskell", the extension's ID.
 
 Create a new project by executing the following command in a new folder called Test:
 
