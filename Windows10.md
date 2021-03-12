@@ -28,8 +28,8 @@ Create two new folders inside your `Haskell` folder called:
 
 You should now have the folders `.\Haskell\GHC` and `.\Haskell\Cabal`.
 
-Download and extract (using 7-Zip) to your `.\Haskell\GHC` folder: https://www.haskell.org/ghc/download_ghc_8_10_3.html (scroll down until you find the Windows binary package)
-Make sure to extract from the folder under the version. So extract the contents of the `ghc-8.10.3` folder, not the `ghc-8.10.3` folder itself.
+Download and extract (using 7-Zip) to your `.\Haskell\GHC` folder: https://www.haskell.org/ghc/download_ghc_8_10_4.html (scroll down until you find the Windows binary package)
+Make sure to extract from the folder under the version. So extract the contents of the `ghc-8.10.4` folder, not the `ghc-8.10.4` folder itself.
 
 In your `GHC` folder, you should now have the following folders:
 * `bin`
@@ -64,7 +64,7 @@ To test that we were successful, open a new PowerShell or cmd (a new instance is
 * `cabal update`
 
 You should see version information like:
-* `The Glorious Glasgow Haskell Compilation System, version 8.10.3`
+* `The Glorious Glasgow Haskell Compilation System, version 8.10.4`
 * `cabal-install version 3.2.0.0`
 * `compiled using version 3.2.0.0 of the Cabal library`
 * `Downloading the latest package list from hackage.haskell.org`
