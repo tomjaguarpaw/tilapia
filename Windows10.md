@@ -1,18 +1,6 @@
 # Install GHC, Cabal and Haskell Language Server IDE on Windows 10
 
-There are two ways to install GHC and Cabal on Windows 10
 
-1. Automatically, by using the Chocolately package manager
-2. Manually, by downloading, unpacking and configuring all the dependencies
-
-Option 1 will generally be easier and quicker but you might choose 2 if you want more control over or insight into the process.
-
-## Install GHC and Cabal using the Chocolately package manager
-
-Follow [the Haskell Platform Windows installation
-instructions](https://www.haskell.org/platform/windows.html). Then
-skip directly to the section "VS Code and Haskell Language Server"
-below.
 
 ## Install GHC and Cabal manually
 
