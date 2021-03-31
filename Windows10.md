@@ -119,6 +119,7 @@ If some reasonable looking information is displayed, congratulations! You're all
 All credit for the information here goes to
 [lambdaheart](https://github.com/lambdaheart) for [the excellent
 guide](https://github.com/lambdaheart/Haskell-Guide/blob/master/DevelopmentEnvironment.md),
-of which this is just a condensed and more bare-bones version.
+of which this is just a condensed and more bare-bones version. If you're a power user, I'd 
+encourage you to check out that guide; you may benefit from some of the additional steps covered.
 
 Written by Will Gould.
