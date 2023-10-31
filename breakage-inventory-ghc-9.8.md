@@ -53,6 +53,8 @@ The internal name of `(,)` was changed to `Tuple2`
 * `stan` uses `Tuple2` in
   [`Stan.Pattern.Type`](https://github.com/kowainik/stan/commit/aff7e69d671d22fde0a0236e6bd511804c0605af#diff-4137c7c9af7e0110e8dd00dd181ef3a7a087c5383f9d7b064ff470cf5a7be82d)
 
+* `swagger2` [tests broke](https://github.com/GetShopTV/swagger2/issues/248)
+
 ### `GreName` removed
 
 `GreName` was removed in favour of `Name`
