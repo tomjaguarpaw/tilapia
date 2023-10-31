@@ -69,3 +69,19 @@ The internal name of `(,)` was changed to `Tuple2`
 * Haddock for [`ghc-9.6.3`](https://hackage.haskell.org/package/ghc-9.6.3/candidate/docs/GHC-Types-Avail.html#t:AvailInfo)
 
 * Haddock for [`ghc-9.8.1`](https://hackage.haskell.org/package/ghc-9.8.1/candidate/docs/GHC-Types-Avail.html#t:AvailInfo)
+
+### `formatBulleted` signature changed
+
+`formatBulleted` used to take an `SDocContext` but now it doesn't
+
+#### References
+
+#### Examples
+
+* [`ghc-parser`](https://github.com/IHaskell/IHaskell/blob/902c5609601693b27814e38c9712bce7c27c151c/ghc-parser/generic-src/Language/Haskell/GHC/Parser.hs#L239) and [`ihaskell`](https://github.com/IHaskell/IHaskell/blob/902c5609601693b27814e38c9712bce7c27c151c/src/IHaskell/Eval/Util.hs#L341) use `formatBulleted`
+
+#### References
+
+* Haddock for [`ghc-9.6.3`](https://hackage.haskell.org/package/ghc-9.6.3/docs/GHC-Utils-Error.html#v:formatBulleted)
+
+* Haddock for [`ghc-9.8.1`](https://hackage.haskell.org/package/ghc-9.8.1/docs/GHC-Utils-Error.html#v:formatBulleted)
