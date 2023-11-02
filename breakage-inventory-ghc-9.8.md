@@ -2,7 +2,11 @@
 
 A catalogue of all the non-trivial fixes (that is not just bounds
 bumps) required to upgrade Haskell code that worked with GHC 9.6 to
-GHC 9.8.
+GHC 9.8.  The [GHC 9.8 migration
+guide](https://gitlab.haskell.org/ghc/ghc/-/wikis/migration/9.8)
+contains a list of changes that the GHC team anticipated ahead of time
+were capable of causing breakage whereas this breakage inventory is a
+report of breakage that actually happened in practice.
 
 ## `base`
 
