@@ -39,11 +39,6 @@ with `Prelude.unzip` if `Data.Functor` is exported unqualified.
 
 * [`hspec-core`](https://github.com/hspec/hspec/issues/867)
 
-#### Examples
-
-None known yet.  If you find one please file an issue on this
-repository so it can be incorporated in this document.
-
 #### References
 
 * Haddock for [`Data.Functor.unzip`](https://hackage.haskell.org/package/base-4.19.0.0/docs/Data-Functor.html#v:unzip)
