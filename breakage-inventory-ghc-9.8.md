@@ -37,6 +37,10 @@ with `Prelude.unzip` if `Data.Functor` is exported unqualified.
 
 #### Examples
 
+* [`hspec-core`](https://github.com/hspec/hspec/issues/867)
+
+#### Examples
+
 None known yet.  If you find one please file an issue on this
 repository so it can be incorporated in this document.
 
