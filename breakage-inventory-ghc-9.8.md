@@ -19,7 +19,7 @@ the warning.
 
 #### Examples
 
-* [haskell-hedgehog](https://github.com/hedgehogqa/haskell-hedgehog/pull/504/files#diff-b8ed06757045fac949c89f2139a862498ad2b6d1f82c61a31e7c91d6cf0eaa70)
+* [`haskell-hedgehog`](https://github.com/hedgehogqa/haskell-hedgehog/pull/504/files#diff-b8ed06757045fac949c89f2139a862498ad2b6d1f82c61a31e7c91d6cf0eaa70)
   uses `.cabal` file conditional compilation.
 
 #### References
