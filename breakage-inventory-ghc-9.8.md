@@ -90,3 +90,23 @@ The internal name of `(,)` was changed to `Tuple2`
 * Haddock for [`ghc-9.6.3`](https://hackage.haskell.org/package/ghc-9.6.3/docs/GHC-Utils-Error.html#v:formatBulleted)
 
 * Haddock for [`ghc-9.8.1`](https://hackage.haskell.org/package/ghc-9.8.1/docs/GHC-Utils-Error.html#v:formatBulleted)
+
+## `template-haskell`
+
+### `TyVarBndr ()` changed to `TyVarBndr BndrVis` in multiple places
+
+The type `TyVarBndr ()` was changed to `TyVarBndr BndrVis` in
+multiple places, including `DataD`, `NewtypeD`, `TypeDataD`,
+`TypeSynD` and `ClassD`.
+
+#### Examples
+
+* [`th-extras`](https://github.com/erikd/th-extras/commit/b0f1907d6aa887b77339d85ba8aed25846f7ea13)
+
+#### References
+
+* Haddock for
+  [`template-haskell-2.20.0.0`](https://hackage.haskell.org/package/template-haskell-2.20.0.0/docs/Language-Haskell-TH-Syntax.html#v:DataD)
+
+* Haddock for
+  [`template-haskell-2.21.0.0`](https://hackage.haskell.org/package/template-haskell-2.21.0.0/docs/Language-Haskell-TH-Syntax.html#v:DataD)
