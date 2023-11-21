@@ -103,6 +103,8 @@ multiple places, including `DataD`, `NewtypeD`, `TypeDataD`,
 
 * [`th-extras`](https://github.com/erikd/th-extras/commit/b0f1907d6aa887b77339d85ba8aed25846f7ea13)
 
+* [`template-haskell-optics`](https://github.com/well-typed/optics/pull/499/commits/3ee3632418458cb62831e9b88f0185be9ae76032), note how `DataInstD` is not using `BndrVis`
+
 #### References
 
 * Haddock for
