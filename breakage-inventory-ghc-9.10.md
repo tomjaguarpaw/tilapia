@@ -48,3 +48,22 @@ src/Protolude/List.hs:23:1: error: [GHC-44360]
 
 [Safe
 Haskell](https://ghc.gitlab.haskell.org/ghc/doc/users_guide/exts/safe_haskell.html)
+
+## GHC
+
+### Linear `do` pattern match
+
+A failing pattern match in linear `do`-notation no longer counts as
+"using" the matched value.  For example, this no longer compiles
+
+```.hs
+g :: a ⊸ Linear.IO a
+g x = Linear.do
+  (y, True) <- pure (f x)
+  return y
+```
+
+#### Examples
+
+[genghin/romes via
+Discourse](https://discourse.haskell.org/t/please-contribute-to-the-ghc-9-10-breakage-inventory/9533/7?u=tomjaguarpaw)
