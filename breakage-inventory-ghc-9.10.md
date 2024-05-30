@@ -27,3 +27,24 @@ any module that uses its own, or any another module than
 * [Haddock for
   `foldl'`](https://hackage.haskell.org/package/base-4.19.1.0/docs/Data-Foldable.html#v:foldl-39-)
   (for GHC 9.8)
+
+### `GHC.Num` is no longer `Safe`
+
+It seems that `GHC.Num` used to be `Safe` [as in Safe
+Haskell](https://ghc.gitlab.haskell.org/ghc/doc/users_guide/exts/safe_haskell.html)
+but no longer is.  That can cause an error like the following if you
+try to use it in modules marked `Safe`
+
+```
+src/Protolude/List.hs:23:1: error: [GHC-44360]
+    GHC.Num: Can't be safely imported! The module itself isn't safe.
+```
+
+#### Examples
+
+[`protolude`](https://github.com/protolude/protolude/issues/149)
+
+#### References
+
+[Safe
+Haskell](https://ghc.gitlab.haskell.org/ghc/doc/users_guide/exts/safe_haskell.html)
