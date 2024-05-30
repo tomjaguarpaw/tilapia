@@ -67,3 +67,11 @@ g x = Linear.do
 
 [genghin/romes via
 Discourse](https://discourse.haskell.org/t/please-contribute-to-the-ghc-9-10-breakage-inventory/9533/7?u=tomjaguarpaw)
+
+### Spurious `-Wincomplete-record-selectors` warning
+
+Sometimes `-Wincomplete-record-selectors` warns unnecessarily.
+
+#### Examples
+
+[`imp`](https://github.com/tfausak/imp/pull/24#issuecomment-2116480980)
