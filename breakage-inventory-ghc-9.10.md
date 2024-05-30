@@ -75,3 +75,16 @@ Sometimes `-Wincomplete-record-selectors` warns unnecessarily.
 #### Examples
 
 [`imp`](https://github.com/tfausak/imp/pull/24#issuecomment-2116480980)
+
+## `template-haskell`
+
+See [sand-wich's post on
+Discourse](https://discourse.haskell.org/t/please-contribute-to-the-ghc-9-10-breakage-inventory/9533/6?u=tomjaguarpaw)
+for more details of breakage in `template-haskell`, and its effects.
+
+### Kind of `Code`
+
+The kind of `Code` was changed from `forall r. (Type -> Type) -> TYPE r
+-> Type` to `(Type -> Type) -> forall r. TYPE r -> Type`.
+
+### `InfixD` now stores a `NamespaceSpecifier`
