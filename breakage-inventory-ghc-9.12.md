@@ -44,3 +44,29 @@ unqualified (and `Prelude` unqualified, which is the default).
 #### References
 
 * [`text` changelog](https://hackage.haskell.org/package/text-2.1.2/changelog)
+
+
+## `Cabal`
+
+### `readGenericPackageDescription` in `Distribution.Simple.PackageDescription` had its type changed
+
+from the original
+```haskell
+readGenericPackageDescription :: Verbosity -> FilePath -> IO GenericPackageDescription 
+```
+to
+```haskell
+readGenericPackageDescription :: HasCallStack => Verbosity -> Maybe (SymbolicPath CWD (Dir Pkg)) -> SymbolicPath Pkg File -> IO GenericPackageDescription
+```
+The new argument allows overriding the CWD and the FilePath Argument was changed to make it explicitly a SymbolicPath.
+
+To achieve old behaviour pass `Nothing` before the `SymbolicPath` and use `makeSymbolicPath` from `Distribution.Utils.Path` 
+to convert your `FilePath` into a `SymbolicPath`
+
+#### Examples
+
+[`jailbreak-cabal`](https://github.com/NixOS/jailbreak-cabal/commit/280f530ef45709282290dbe9665da7f5ae49908b)
+
+#### References 
+
+[`Cabal` changelog](https://github.com/haskell/cabal/blob/master/release-notes/Cabal-3.14.1.0.md)
