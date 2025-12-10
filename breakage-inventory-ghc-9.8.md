@@ -33,7 +33,7 @@ the warning.
 ### `Data.Functor.unzip` added
 
 `Data.Functor` now exports a general form of `unzip` which clashes
-with `Prelude.unzip` if `Data.Functor` is exported unqualified.
+with `Prelude.unzip` if `Data.Functor` is imported unqualified.
 
 #### Examples
 
