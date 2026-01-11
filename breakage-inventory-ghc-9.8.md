@@ -112,3 +112,25 @@ multiple places, including `DataD`, `NewtypeD`, `TypeDataD`,
 
 * Haddock for
   [`template-haskell-2.21.0.0`](https://hackage.haskell.org/package/template-haskell-2.21.0.0/docs/Language-Haskell-TH-Syntax.html#v:DataD)
+
+## GHC
+
+### Warning about `TypeAbstractions`
+
+Binding a pattern variable warns that it will require
+`TypeAbstractions` in the future. Previously, `TypeApplications` was
+enough. This warning is unsuppressible and will break compilation for
+users who compile with `-Werror`.  Users wishing to support multiple
+versions of GHC will have to use some form of conditional compilation,
+such as Cabal file conditionals or `CPP`, since `TypeAbstractions` is
+not available in any version of GHC before 9.8
+
+```.hs
+do
+  Nothing @a <- pure Nothing
+```
+
+#### References
+
+* [GHC User Guide page for
+  `TypeAbstractions`](https://downloads.haskell.org/ghc/9.8.1/docs/users_guide/exts/type_abstractions.html)
